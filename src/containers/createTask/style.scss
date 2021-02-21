@@ -1,0 +1,76 @@
+.create-task {
+  .title {
+    padding: 11px 0;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .form-item-box {
+    display: flex;
+    .form-item {
+      width: calc(50% - 10px);
+      &:last-child {
+        margin-left: 20px;
+      }
+    }
+  }
+  .form-item {
+    .react-datepicker-wrapper {
+      width: 100%;
+      input {
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        width: 100%;
+        padding: 9px 10px;
+        
+        &::placeholder {
+          border: none !important;
+        }
+      }
+    }
+    .item-input {
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      font-size: 16px;
+      width: 100%;
+      padding: 7px 10px;
+      
+      border-radius: 5pt;
+      &::placeholder {
+        padding: 0;
+        font-size: 16px;
+        color: #9393aa;
+      }
+      option {
+        font-size: 16px;
+        padding: 7px 5px;
+      }
+    }
+    > label {
+      display: block;
+      font-weight: 600;
+      font-size: 16px;
+      color: #3c5674;
+      text-align: left;
+      padding: 16px 0 12px;
+    }
+  }
+  .action {
+    background: #5ea661;
+    padding: 7px 0;
+    text-align: center;
+    width: 100%;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    margin-top: 10px;
+    &:active,
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
